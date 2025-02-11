@@ -1,0 +1,2 @@
+consulta_email_birthday = """SELECT email FROM usuarios.usuario WHERE id in (12, 11, 13);"""
+consulta_aniversariantes = """SELECT nome, sobrenome, setor FROM usuarios.usuario WHERE DAY(data_nascimento) = DAY(CURDATE()) AND MONTH(data_nascimento) = MONTH(CURDATE());"""
